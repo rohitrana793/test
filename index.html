@@ -3,9 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      /* h1 {
+        color: purple;
+      } */
+      .box1 h1,
+      .box1 p {
+        color: purple;
+      }
+      /* .box1 p {
+        color: blue;
+      /* } */
+
+      /* universal selecter(*) */
+      /* * {
+        color: red;
+      } */
+      .box .c-box h1 {
+        color: purple;
+      }
+
+      /* pseudo selector */
+      li:first-child {
+        color: green;
+      }
+      li:nth-child(2n) {
+        color: red;
+      }
+
+      /* before and after */
+      /* p::before {
+        content: "sello jee";
+        color: red;
+        font-size: 30px;
+      } */
+
+      .c {
+        color: red;
+        font-size: 20px;
+      }
+
+      /* attribute selector (src,alt) */
+      img[alt="image1"] {
+        height: 200px;
+      }
+      input[type="email"] {
+        background-color: red;
+      }
+
+      input[type="email"]:focus {
+        background-color: red;
+      }
+
+      input[type="checkbox"]:checked {
+        accent-color: red;
+      }
+
+      /* -- rgb color ---*/
+      /* p {
+        color: rgb(150, 100, 255);
+      } */
+      /* p {
+        color: rgba(100, 50, 100, 0.5);
+      } */
+
+      /* hex code */
+      /* p {
+        color: #f564a9;
+      } */
+
+      p {
+        /* text-align: center; */
+        /* justify-content: center; */
+        /* text-transform: capitalize; */
+        /* text-decoration: line-through 2px red;
+        text-underline-offset: 5px; */
+        /* text-indent: 30px;  */
+      }
+
+      /* h1 {
+        text-shadow: 2px 2px 2px red;
+        text-shadow: 2px 2px 4px rgba(250, 190, 50, 0.5);
+        text-shadow: 2px 2px 4px rgba(250, 190, 50, 0.5),
+          12px 2px 4px rgba(250, 70, 150, 0.5);
+      }
+      */
+
+      /* font-family */
+      p {
+        /* font-family: "lato"; */
+        font-family: "roboto", "san-serif";
+      }
+
+      /* box model */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        /* margin: 20px 10px; */
+        margin: 20px;
+      }
+
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        border-radius: 5px;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        margin-left: 200px;
+        border-radius: 5px;
+      }
+      .box3 {
+        height: 200px;
+        width: 200px;
+        background-color: green;
+        margin-left: 400px;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
-    <h1>CSS</h1>
+    <!-- <div class="box1">
+      <h1>hello jee</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam tempore
+        et quam vero similique aspernatur ullam harum tenetur debitis commodi,
+        natus sed nostrum eos vitae, odit sint pariatur? Eaque.
+      </p>
+    </div>
+    <div class="box2">
+      <h1>sello jee</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ut,
+        iusto, reiciendis praesentium odit dicta nihil cumque suscipit possimus
+        architecto repudiandae totam recusandae rem nisi non, quo voluptatum
+        aliquam magni.
+      </p>
+    </div> 
+
+    <div class="box">
+      <h1>hello world</h1>
+      <div class="c-box">
+        <h1>sello world</h1>
+      </div>
+      <h1>hello css</h1>
+    </div>
+
+    <ol>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    </ol>
+    <p>
+      Lorem ipsum dolor sit amet
+      <span class="c">consectetur adipisicing elit</span>. Ut laborum officiis
+      facilis doloribus minima labore exercitationem animi. Excepturi, iusto
+      sint expedita inventore porro iste dicta, saepe tempore ex provident
+      delectus.
+    </p>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s"
+      alt=""
+    />
+    <input type="text" placeholder="username" />
+    <input type="email" placeholder="email" />
+    <input type="checkbox" />
+
+    <h1>hello world</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo omnis ullam
+      nesciunt quis repellat inventore quae, amet unde aspernatur reiciendis
+      rerum neque autem pariatur molestias iusto beatae quisquam quos totam.
+    </p>
+    -->
+
+    <div class="box1">
+      <h1>hello</h1>
+    </div>
+    <div class="box2">
+      <h1>hello</h1>
+    </div>
+    <div class="box3">
+      <h1>hello</h1>
+    </div>
   </body>
 </html>
